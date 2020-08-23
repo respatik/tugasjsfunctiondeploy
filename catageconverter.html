@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3: Cat Age Converter</title>
+    <style>
+        body{
+            background-color: #ffd3b6;
+        }
+
+        .soal{
+            background-color: #a8e6cf;
+            font-family: 'Poppins', sans-serif;
+            color: #ffaaa5;
+        }
+
+        .function{
+            background-color: #dcedc1;
+            font-family: 'Raleway', sans-serif;
+            color: #ffaaa5;
+        }
+
+        .copyright{
+            text-align: center;
+            font-size: 0,5m;
+            color: #ffffdd;
+        }
+
+        a{
+            font-size: 0,8m;
+            color: #ffffdd;
+            text-decoration: none; 
+        }
+    </style>
+</head>
+<body>
+    <div class="soal">
+        <p>Kita akan membuat program untuk menghitung umur kucing dalam usia manusia. Poin-poinnya adalah:
+            <ul>
+                <li>Pada usia 1 tahun, umur kucing adalah 15 kali umur manusia</li>
+                <li>Pada usia 2 tahun, umur kucing adalah 24 kali umur manusia</li>
+                <li>Pada usia 3 tahun (> 24 tahun) dan seterusnya umur kucing adalah 
+                    ditambah 4 dari umur manusia ketika 24  tahun. Jadi jika umur 
+                    kucing saat ini 4 tahun berarti dalam kalender tahun kucing, 
+                    umurnya adalah 32 tahun.</li>
+                <li>Buat sebuah ARROW function yang menerima parameter umur kucing 
+                    berdasarkan perhitungan tahun manusia.</li>
+            </ul>    
+        </p>
+        <br>
+    </div>
+
+    <div class="function">
+        <p>const catAgeConverter; <br><br>
+
+            catAgeConverter = (year) => {if (year == 1){ <br>
+                return 15; <br>
+            } else if (year == 2){ <br>
+                return 24; <br>
+            } else if (year >2){ <br>
+                return 24 + 4 * (year - 2); <br>
+            } else { <br>
+                return "data tidak ditemukan" <br>
+            } <br>
+            }
+        </p>
+    </div>
+
+    <br><br>
+
+    <a href="index.html">back to home</a>
+
+    <footer>
+        <p class="copyright">©Respati Kusumawardhani, 2020</p>
+    </footer>
+</body>
+</html>

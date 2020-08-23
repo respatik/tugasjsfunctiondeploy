@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2: Thermometer Converter</title>
+    <style>
+        body{
+            background-color: #36d1c4;
+        }
+
+        .soal{
+            background-color: #a0eecc;
+            font-family: 'Poppins', sans-serif;
+            color: #f6318c;
+        }
+
+        .function{
+            background-color: #fff2be;
+            font-family: 'Raleway', sans-serif;
+            color: #f6318c;
+        }
+
+        .copyright{
+            text-align: center;
+            font-size: 0,5m;
+            color: #ffffdd;
+        }
+
+        a{
+            font-size: 0,8m;
+            color: #ffffdd;
+            text-decoration: none; 
+        }
+    </style>
+</head>
+<body>
+    <div class="soal">
+        <p>Buat sebuah function helper untuk convert temperatur Celcius ke Fahrenherit dan sebaliknya. Ikuti poin-poin dibawah ini:
+            <ul>
+                <li>Buat sebuah function helper lalu gunakan pada function converternya</li>
+            </ul>    
+        </p>
+        <br>
+    </div>
+
+    <div class="function">
+        <p>
+            function fromCelsius (number){ <br>
+                return number * 9/5; <br>
+            };
+            <br><br>
+            function getFahrenheit(celsius){ <br>
+                return fromCelsius(celsius) + 32; <br>
+            };
+            <br><br>
+            console.log (getFahrenheit(37));
+            
+            function fromFahrenheit (number){ <br>
+                return number - 32; <br>
+            };
+            <br><br>
+            function getCelcius (fahrenheit){ <br>
+                return fromFahrenheit(fahrenheit) * 5/9; <br>
+            }; <br><br>
+            
+            console.log (getCelcius(100));
+        </p>
+    </div>
+
+    <br><br>
+
+    <a href="index.html">back to home</a>
+
+    <footer>
+        <p class="copyright">©Respati Kusumawardhani, 2020</p>
+    </footer>
+</body>
+</html>
