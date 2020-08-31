@@ -52,24 +52,30 @@
     </div>
 
     <div class="function">
-        <p>const catAgeConverter; <br><br>
+        <p>
+            year = prompt ("masukkan umur kucing")
 
-            catAgeConverter = (year) => {if (year == 1){ <br>
-                return 15; <br>
-            } else if (year == 2){ <br>
-                return 24; <br>
-            } else if (year >2){ <br>
-                return 24 + 4 * (year - 2); <br>
-            } else { <br>
-                return "data tidak ditemukan" <br>
-            } <br>
+            const catAgeConverter = (year) => {if (year == 1){
+                return 15;
+            } else if (year == 2){
+                return 24;
+            } else if (year >2){
+                return 24 + 4 * (year - 2);
+            } else {
+                return 0;
             }
+            } 
+
+            // console.log(catAgeConverter (3))
+            alert ("kucing anda berumur sekitar " + catAgeConverter(year) + " tahun pada manusia")
         </p>
     </div>
 
     <br><br>
 
     <a href="index.html">back to home</a>
+
+    <script src="js/exercise-function-3.js"></script>
 
     <footer>
         <p class="copyright">©Respati Kusumawardhani, 2020</p>

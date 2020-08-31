@@ -46,31 +46,31 @@
 
     <div class="function">
         <p>
-            function fromCelsius (number){ <br>
-                return number * 9/5; <br>
-            };
+            let number = prompt ("masukkan suhu dalam celcius") <br><br>
+
+            function getFahrenheit (number){<br>
+            return (number * 9/5 + 32);<br>
+            } <br><br>
+
+            // console.log (getFahrenheit(37));<br>
+            alert ("suhu " + number + " derajat celcius adalah sebesar " + getFahrenheit(number) + " derajat fahrenheit")
             <br><br>
-            function getFahrenheit(celsius){ <br>
-                return fromCelsius(celsius) + 32; <br>
-            };
-            <br><br>
-            console.log (getFahrenheit(37));
-            
-            function fromFahrenheit (number){ <br>
-                return number - 32; <br>
-            };
-            <br><br>
-            function getCelcius (fahrenheit){ <br>
-                return fromFahrenheit(fahrenheit) * 5/9; <br>
-            }; <br><br>
-            
-            console.log (getCelcius(100));
+            let num = prompt ("masukkan suhu dalam Fahrenheit") <br><br>
+
+            function getCelcius (num){<br>
+            return ((num - 32) * 5/9);<br>
+            } <br><br>
+
+            // console.log (getCelcius(100));<br>
+            alert ("suhu " + num + " derajat fahrenheit adalah sebesar " + getCelcius(num) + " derajat celcius")
         </p>
     </div>
 
     <br><br>
 
     <a href="index.html">back to home</a>
+
+    <script src="js/exercise-function-2.js"></script>
 
     <footer>
         <p class="copyright">©Respati Kusumawardhani, 2020</p>
